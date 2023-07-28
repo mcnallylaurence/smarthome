@@ -1,0 +1,37 @@
+
+  GNU nano 5.4                                                    /opt/zigbee2mqtt/data/configuration.yaml                                                             
+homeassistant: false
+permit_join: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://192.168.1.15:1883
+serial:
+  port: /dev/ttyUSB0
+frontend:
+  port: 8082
+  host: 192.168.1.15
+advanced:
+  log_level: debug
+  network_key:
+    - 112
+    - 162
+    - 156
+    - 37
+    - 25
+    - 244
+    - 47
+    - 138
+    - 142
+    - 172
+    - 53
+    - 24
+    - 128
+    - 37
+    - 216
+    - 117
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+
