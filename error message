@@ -1,0 +1,19 @@
+pi@homebridge:/opt/zigbee2mqtt $ npm start
+
+> zigbee2mqtt@1.32.1 start
+> node index.js
+
+Zigbee2MQTT:debug 2023-07-28 17:26:33: Loaded state from file /opt/zigbee2mqtt/data/state.json
+Zigbee2MQTT:info  2023-07-28 17:26:33: Logging to console and directory: '/opt/zigbee2mqtt/data/log/2023-07-28.17-26-33' filename: log.txt
+Zigbee2MQTT:debug 2023-07-28 17:26:33: Removing old log directory '/opt/zigbee2mqtt/data/log/2023-07-28.17-08-17'
+Zigbee2MQTT:info  2023-07-28 17:26:33: Starting Zigbee2MQTT version 1.32.1 (commit #83205e43)
+Zigbee2MQTT:info  2023-07-28 17:26:33: Starting zigbee-herdsman (0.16.0)
+Zigbee2MQTT:debug 2023-07-28 17:26:33: Using zigbee-herdsman with settings: '{"adapter":{"concurrent":null,"delay":null,"disableLED":false},"backupPath":"/opt/zigbee2mqtt/data/coordinator_backup.json","databaseBackupPath":"/opt/zigbee2mqtt/data/database.db.backup","databasePath":"/opt/zigbee2mqtt/data/database.db","network":{"channelList":[11],"extendedPanID":[221,221,221,221,221,221,221,221],"networkKey":"HIDDEN","panID":6754},"serialPort":{"path":"/dev/ttyUSB0"}}'
+Zigbee2MQTT:error 2023-07-28 17:26:34: Error while starting zigbee-herdsman
+Zigbee2MQTT:error 2023-07-28 17:26:34: Failed to start zigbee
+Zigbee2MQTT:error 2023-07-28 17:26:34: Check https://www.zigbee2mqtt.io/guide/installation/20_zigbee2mqtt-fails-to-start.html for possible solutions
+Zigbee2MQTT:error 2023-07-28 17:26:34: Exiting...
+Zigbee2MQTT:error 2023-07-28 17:26:34: Error: Error while opening serialport 'Error: Error Resource temporarily unavailable Cannot lock port'
+    at SerialPort.<anonymous> (/opt/zigbee2mqtt/node_modules/zigbee-herdsman/src/adapter/z-stack/znp/znp.ts:146:28)
+    at SerialPort._error (/opt/zigbee2mqtt/node_modules/@serialport/stream/dist/index.js:75:22)
+    at /opt/zigbee2mqtt/node_modules/@serialport/stream/dist/index.js:111:18
