@@ -1,0 +1,24 @@
+{
+    "bridge": {
+        "name": "Homebridge 94D6",
+        "username": "0E:0A:E2:05:94:D6",
+        "port": 51376,
+        "pin": "REDACTED-see-Homebridge-UI-Status-page",
+        "advertiser": "avahi"
+    },
+    "accessories": [],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8581,
+            "platform": "config"
+        },
+        {
+            "platform": "zigbee2mqtt",
+            "mqtt": {
+                "base_topic": "zigbee2mqtt",
+                "server": "mqtt://localhost:1883"
+            }
+        }
+    ]
+}
